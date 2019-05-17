@@ -11,7 +11,7 @@ C1: 0805 22u Capactior (10V Min) - DigiKey Part# 490-10511-2-ND
 
 J1: MicroSD Slot - DigiKey Part# WM6825CT-ND
 
-Special thanks to: 
-MockyLock for the idea
+Special thanks to:  
+MockyLock for the idea  
 Extrems & emu_kidid for doing the real work needed to make this possible
 
