@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name gc_sp2)(type Legacy)(uri ${KIPRJMOD}/gc_sp2.lib)(options "")(descr ""))
+  (lib (name gc_sp2-rescue)(type Legacy)(uri ${KIPRJMOD}/gc_sp2-rescue.lib)(options "")(descr ""))
+)
