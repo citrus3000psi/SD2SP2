@@ -9,7 +9,7 @@ The PCB must be ordered in 1.2mm thickness. Surface finish must be ENIG at minim
 
 
 BOM:  
-C1: 0805 22u Capactior (10V Min) - DigiKey Part# 490-10511-2-ND  
+C1: 0805 22u Capactior (10V Min) - DigiKey Part# 	1276-6780-1-ND  
 J1: MicroSD Slot - DigiKey Part# WM6825CT-ND  
 
 Unassembled kits will be available for purchase at my webstore soon: https://shop.dansprojects.com
