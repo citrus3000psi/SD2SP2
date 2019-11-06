@@ -1,0 +1,4 @@
+Reference, Quantity, Value, Footprint, Datasheet
+C1 ,1,.1,Capacitors_SMD:C_0805_HandSoldering,~
+J1 ,1,Micro_SD_Card,gc_sp2:1050270001,http://katalog.we-online.de/em/datasheet/693072010801.pdf
+P1 ,1,SerialPort,gc_sp2:SP2_FootPrint,

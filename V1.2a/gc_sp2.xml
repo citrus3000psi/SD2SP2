@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\dRk\Desktop\KiCad Projects\GC_SP2\gc_sp2\gc_sp2.sch</source>
+    <date>10/15/2019 8:33:14 AM</date>
+    <tool>Eeschema (5.1.0)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>gc_sp2.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P1">
+      <value>SerialPort</value>
+      <footprint>gc_sp2:SP2_FootPrint</footprint>
+      <libsource lib="gc_sp2" part="SerialPort" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB384EE</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Micro_SD_Card</value>
+      <footprint>gc_sp2:1050270001</footprint>
+      <datasheet>http://katalog.we-online.de/em/datasheet/693072010801.pdf</datasheet>
+      <libsource lib="gc_sp2-rescue" part="Micro_SD_Card-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB385EE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>.1</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB39511</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="gc_sp2" part="SerialPort">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">SerialPort</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+3.3" type="BiDi"/>
+        <pin num="2" name="GND" type="BiDi"/>
+        <pin num="3" name="INT" type="BiDi"/>
+        <pin num="4" name="CLK" type="BiDi"/>
+        <pin num="5" name="DO" type="BiDi"/>
+        <pin num="6" name="DI" type="BiDi"/>
+        <pin num="7" name="CS" type="BiDi"/>
+        <pin num="8" name="GND" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="gc_sp2-rescue" part="Micro_SD_Card-Connector">
+      <footprints>
+        <fp>microSD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Micro_SD_Card-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DAT2" type="BiDi"/>
+        <pin num="2" name="DAT3/CD" type="BiDi"/>
+        <pin num="3" name="CMD" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="DAT0" type="input"/>
+        <pin num="8" name="DAT1" type="input"/>
+        <pin num="9" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="gc_sp2">
+      <uri>C:\Users\dRk\Desktop\KiCad Projects\GC_SP2\gc_sp2/gc_sp2.lib</uri>
+    </library>
+    <library logical="gc_sp2-rescue">
+      <uri>C:\Users\dRk\Desktop\KiCad Projects\GC_SP2\gc_sp2/gc_sp2-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J1" pin="9"/>
+      <node ref="J1" pin="6"/>
+      <node ref="P1" pin="8"/>
+      <node ref="P1" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="2" name="/INT">
+      <node ref="J1" pin="1"/>
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="3" name="/CLK">
+      <node ref="J1" pin="5"/>
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="4" name="/DI">
+      <node ref="P1" pin="5"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="5" name="/DO">
+      <node ref="P1" pin="6"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="6" name="/CS">
+      <node ref="P1" pin="7"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="7" name="/+3.3">
+      <node ref="C1" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="8" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+  </nets>
+</export>
